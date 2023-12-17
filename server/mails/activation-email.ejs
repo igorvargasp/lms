@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ativação de Conta</title>
+</head>
+
+<body>
+    <p>Olá <%= user.name %>!</p>
+
+    <p>Obrigado por se inscrever no nosso serviço! Para ativar a sua conta, por favor clique no link abaixo:</p>
+
+    <a href="<%= activationCode %>">Ativar Conta</a>
+
+    <p>Se o link acima não funcionar, copie e cole o seguinte URL no seu navegador:</p>
+    <p>
+        <%= activationCode %>
+    </p>
+
+    <p>Obrigado,</p>
+    <p>A equipe do Nosso Serviço</p>
+</body>
+
+</html>

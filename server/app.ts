@@ -3,6 +3,7 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
 import { ErrorMiddleware } from "./middleware/error";
+import userRouter from "./routes/user.route";
 
 export const app = express();
 dotenv.config();
@@ -20,6 +21,10 @@ app.use(
     origin: process.env.ORIGIN,
   })
 );
+
+//routes
+
+app.use("/api/v1", userRouter);
 
 // testing api
 
