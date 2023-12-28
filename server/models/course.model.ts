@@ -46,7 +46,7 @@ interface ICourse extends Document {
   reviews: IReview[];
   courseData: ICourseData[];
   ratings: number;
-  purchased?: number;
+  purchased: number;
 }
 
 const reviewSchema: Schema<IReview> = new mongoose.Schema({
